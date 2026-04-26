@@ -3,15 +3,16 @@ package org.example.parkignLot;
 import org.example.entity.ParkingSpot;
 import org.example.entity.Ticket;
 import org.example.entity.Vehicle;
+import org.example.pricingStrategy.CostComputation;
 import org.example.spotManagers.ParkingSpotManager;
 
 import java.util.List;
 
 public class ParkingBuilding {
 
-    List<ParkignLevel> levels;
+    private  final List<ParkignLevel> levels;
 
-    public ParkingBuilding(List<ParkignLevel> levels){
+    public ParkingBuilding(List<ParkignLevel> levels, CostComputation costComputation) {
         this.levels=levels;
     }
 

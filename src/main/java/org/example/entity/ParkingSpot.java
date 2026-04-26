@@ -2,7 +2,7 @@ package org.example.entity;
 
 public class ParkingSpot {
     private final String spotNo;
-    private boolean isFree;
+    private boolean isFree=true;
 
     public ParkingSpot(String spotNo){
         this.spotNo=spotNo;

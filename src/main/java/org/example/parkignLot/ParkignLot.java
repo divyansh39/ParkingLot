@@ -2,6 +2,7 @@ package org.example.parkignLot;
 
 import org.example.entity.Ticket;
 import org.example.entity.Vehicle;
+import org.example.payment.Payment;
 
 public class ParkignLot {
 
@@ -19,7 +20,7 @@ public class ParkignLot {
         return entranceGate.enter(building,vehicle);
     }
 
-    public void exitGate(Ticket ticket, Payment payment){
+    public void vehicleExits(Ticket ticket, Payment payment){
         exitGate.completeExit(building, ticket, payment);
     }
 
